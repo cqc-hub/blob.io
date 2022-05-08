@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+    <!-- themes -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/buble.css"> -->
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/dark.css"> -->
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/pure.css"> -->
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/dolphin.css"> -->
+
+</head>
+
+<body>
+    <div id="app">
+        loading
+    </div>
+    <script>
+        const $docsifyConfig = {
+            formatUpdated: '{MM}/{DD} {HH}:{mm}',
+            name: '<h2>docsify</h2>',
+            nameLink: {
+                // '/': '/?id=get-something-better',
+                '/': '/',
+            },
+            themeColor: '#3F51B5',
+
+            repo: '',
+            el: '#app',
+
+            auto2top: true, //切换页面后是否自动跳转到页面顶部。
+            homepage: 'main.md',
+            executeScript: true,
+
+            loadSidebar: true, // 定制侧边栏
+            mergeNavbar: true, // 小屏设备下合并导航栏到侧边栏
+            maxLevel: 4,
+            subMaxLevel: 2,
+            routerMode: 'history',
+
+            loadNavbar: true,
+            alias: {
+                '/.*/_sidebar.md': '/_sidebar.md'
+            },
+
+            vueComponents: {
+                'button-counter': {
+                    template: `
+                        <button @click="count += 1">
+                        You clicked me {{ count }} times
+                        </button>
+                    `,
+                    data() {
+                        return {
+                            count: 0,
+                        };
+                    },
+                },
+            },
+
+            coverpage: true,
+            onlyCover: false,
+            coverpage: 'cover.md',
+            coverpage: {
+                '/': 'cover.md',
+            },
+
+            topMargin: 90,
+
+            search: {
+                paths: 'auto',
+                placeholder: {
+                    '/': '搜索'
+                },
+                pathNamespaces: ['/vue/vue3'],
+
+                noData: {
+                    '/': '找不到结果'
+                },
+
+                hideOtherSidebarContent: true,
+            }
+        }
+
+        window.$docsify = $docsifyConfig
+    </script>
+    <!-- Docsify v4 -->
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+</body>
+
+</html>

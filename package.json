@@ -1,0 +1,12 @@
+{
+  "name": "myBlob",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "docsify serve docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
