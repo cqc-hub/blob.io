@@ -23,8 +23,6 @@
     </div>
     <script>
         const $docsifyConfig = {
-            basePath: 'https://cqc-hub.github.io/blob.io/',
-
             formatUpdated: '{MM}/{DD} {HH}:{mm}',
             name: '<h2>docsify</h2>',
             nameLink: {
@@ -90,6 +88,12 @@
             }
         }
 
+
+        if (location.href.includes('cqc-hub')) {
+            console.log('change basePath');
+            $docsifyConfig.basePath = 'https://cqc-hub.github.io/blob.io/'
+        }
+        
         window.$docsify = $docsifyConfig
     </script>
     <!-- Docsify v4 -->
