@@ -4,7 +4,6 @@
 
   - [markDown 语法](https://markdown.com.cn/cheat-sheet.html#%E6%80%BB%E8%A7%88)
   - [导航](awesome/awesome)
-  - [多页文档](helps/markDown)
   - [封面](vue/vue3)
 
 - 配置

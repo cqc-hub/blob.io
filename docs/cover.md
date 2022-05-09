@@ -2,4 +2,4 @@
 
 # **get something better**
 
-[Get Started](/vue/vue3)
+[Get Started](/profile/profile)

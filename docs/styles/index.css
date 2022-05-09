@@ -1,0 +1,13 @@
+@import url(./profile/profile.css);
+
+
+body, html {
+    word-break: break-word;
+    line-height: normal;
+    font-size: 12px;
+}
+
+
+.shadow {
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
+}
