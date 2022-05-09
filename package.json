@@ -1,12 +1,33 @@
 {
-  "name": "myBlob",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "docsify serve docs"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "name": "my-blob",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "docsify serve docs",
+        "cz": "git add . && git cz",
+        "log": "conventional-changelog --n node_modules/@nicecode/changelog -i CHANGELOG.md -s -r 0"
+    },
+    "config": {
+        "commitizen": {
+            "path": "@nicecode/commit"
+        }
+    },
+    "husky": {
+        "hooks": {
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@nicecode/changelog": "^0.2.0"
+    },
+    "devDependencies": {
+        "@nicecode/commit-lint": "^0.1.2",
+        "commitlint": "^16.2.4",
+        "conventional-changelog-cli": "^2.2.2",
+        "husky": "^8.0.0"
+    }
 }
