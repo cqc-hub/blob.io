@@ -19,7 +19,7 @@ const $docsifyConfig = {
     loadSidebar: true, // 定制侧边栏
     mergeNavbar: true, // 小屏设备下合并导航栏到侧边栏
     maxLevel: 4,
-    subMaxLevel: 2,
+    subMaxLevel: 3,
     // routerMode: 'history',
 
     loadNavbar: true,
