@@ -6,12 +6,12 @@
     "scripts": {
         "start": "docsify serve docs",
         "cz": "git add . && git cz",
-        "log": "conventional-changelog --n node_modules/@nicecode/changelog -i CHANGELOG.md -s -r 0"
+        "log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
     },
     "config": {
-      "commitizen": {
-        "path": "./node_modules/cz-conventional-changelog"
-      }
+        "commitizen": {
+            "path": "node_modules/cz-customizable"
+        }
     },
     "husky": {
         "hooks": {
@@ -25,10 +25,14 @@
         "@nicecode/changelog": "^0.2.0"
     },
     "devDependencies": {
+        "@commitlint/cli": "^16.2.4",
+        "@commitlint/config-conventional": "^16.2.4",
         "@nicecode/commit-lint": "^0.1.2",
         "commitlint": "^16.2.4",
+        "commitlint-config-cz": "^0.13.3",
         "conventional-changelog-cli": "^2.2.2",
         "cz-conventional-changelog": "^3.3.0",
+        "cz-customizable": "^6.3.0",
         "husky": "^8.0.0"
     }
 }
