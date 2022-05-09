@@ -9,9 +9,9 @@
         "log": "conventional-changelog --n node_modules/@nicecode/changelog -i CHANGELOG.md -s -r 0"
     },
     "config": {
-        "commitizen": {
-            "path": "@nicecode/commit"
-        }
+      "commitizen": {
+        "path": "./node_modules/cz-conventional-changelog"
+      }
     },
     "husky": {
         "hooks": {
@@ -28,6 +28,7 @@
         "@nicecode/commit-lint": "^0.1.2",
         "commitlint": "^16.2.4",
         "conventional-changelog-cli": "^2.2.2",
+        "cz-conventional-changelog": "^3.3.0",
         "husky": "^8.0.0"
     }
 }
